@@ -25,3 +25,15 @@
 
 ## 📂 Repository Structure
 - This repository serves as the repo for the Beckhoff PLC control system
+- It should only include static files such as programs, function block, etc. NOT compiled binaries (such as /Boot files). The .gitignore should handle all this.
+
+---
+
+## Getting setup
+- Please make sure that people are aware of any work being done, just to reduce liklihood of merge compatability
+- Download the TwinCAT3 XAE with proper versions (in documentation)
+- Fork this repo into your github account
+- Clone the forked repo
+- **Always check that you can login with the most recent repository release! Otherwise, there are mismatches between versions (someone either forgot to push or forgot to login their changes to the PLC)**
+- Login to PLC to download the compiled binaries and test your code
+- Assuming the downloaded repo is up-to-date, make changes on a separate branch and push to the master remote repo (assign code reviewers as need be)
