@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{6318459e-7650-47dc-a61f-4823f2ea8bee}">
+  <POU Name="MAIN" Id="{6318459e-7650-47dc-a61f-4823f2ea8bee}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	fb_Gauge_01 : FB_Gauge; // 01 moniker used in case future gauges are added
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[fb_Gauge_01();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
