@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <Task Name="TrendRefreshTask" Id="{6191bf74-8e18-4249-b0d0-b2700248bf66}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>120000</CycleTime>
+    <Priority>31</Priority>
+    <TaskFBGuid>{56852921-0240-4187-96a6-32d902dd2c54}</TaskFBGuid>
+    <Fb_init>{a63f2721-0f5a-4dbf-b40a-96ef9d5a0fde}</Fb_init>
+    <Fb_exit>{f20b9229-904a-4003-878b-a5ae7ce5caab}</Fb_exit>
+    <CycleUpdate>{039e8f3d-5ab3-4565-9ba0-61cd72d832f1}</CycleUpdate>
+    <PostCycleUpdate>{0d48e1bc-95e4-49a5-a0d2-81e1b7d05cbf}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

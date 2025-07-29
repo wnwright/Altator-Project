@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="GVL_Data" Id="{a8a74dbe-f2ef-4675-ac7b-b7871c2dcb76}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	fAnalogData : REAL;
+	fTestDelta : REAL;
+	bTrendStatus : BOOL;
+END_VAR
+
+VAR_GLOBAL CONSTANT
+	aiTrendArrayMax : INT;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

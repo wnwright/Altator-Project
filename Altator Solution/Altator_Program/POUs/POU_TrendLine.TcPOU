@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="POU_TrendLine" Id="{dfa9c779-5caa-46c4-91b7-45f046c2c72c}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK POU_TrendLine
+VAR
+	aiLoopIndex : DINT;
+	ArrayTrend : ARRAY[1..GVL_Data.aiTrendArrayMax]OF REAL;
+	ArrayTrendDisp : ARRAY[1..GVL_Data.aiTrendArrayMax]OF REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Trend array loop
+FOR aiLoopIndex := 1 TO (GVL_Data.aiTrendArrayMax-1) DO
+	ArrayTrend[aiLoopIndex] := ArrayTrend[aiLoopIndex + 1];
+	
+END_FOR
+
+ArrayTrend[GVL_Data.aiTrendArrayMax] := GVL_Data.fAnalogData;
+
+// When Pause is OFF, Update the ArrayTrendDisp Array
+IF NOT GVL_Data.bTrendStatus THEN
+	FOR aiLoopIndex := 1 TO GVL_Data.aiTrendArrayMax DO
+		ArrayTrendDisp[aiLoopIndex] := ArrayTrend[aiLoopIndex + 1];
+	END_FOR
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
