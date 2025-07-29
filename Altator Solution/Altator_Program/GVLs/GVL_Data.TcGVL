@@ -4,12 +4,12 @@
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
 	fAnalogData : REAL;
-	fTestDelta : REAL;
+	fTestDelta: LREAL;
 	bTrendStatus : BOOL;
 END_VAR
 
 VAR_GLOBAL CONSTANT
-	aiTrendArrayMax : INT;
+	aiTrendArrayMax : DINT := 500;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

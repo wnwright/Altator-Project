@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
   <POU Name="POU_TrendLine" Id="{dfa9c779-5caa-46c4-91b7-45f046c2c72c}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK POU_TrendLine
+    <Declaration><![CDATA[PROGRAM POU_TrendLine
 VAR
 	aiLoopIndex : DINT;
 	ArrayTrend : ARRAY[1..GVL_Data.aiTrendArrayMax]OF REAL;
@@ -22,6 +22,16 @@ IF NOT GVL_Data.bTrendStatus THEN
 	FOR aiLoopIndex := 1 TO GVL_Data.aiTrendArrayMax DO
 		ArrayTrendDisp[aiLoopIndex] := ArrayTrend[aiLoopIndex + 1];
 	END_FOR
+END_IF
+
+// Test code
+GVL_Data.fTestDelta := 20.0;
+IF GVL_Data.fAnalogData <= 980.0 THEN
+	GVL_Data.fAnalogData := GVL_Data.fAnalogData + GVL_Data.fTestDelta;	
+END_IF
+
+IF GVL_Data.fAnalogData >= 1000.0 THEN
+	GVL_Data.fAnalogData := 100.0;
 END_IF]]></ST>
     </Implementation>
   </POU>

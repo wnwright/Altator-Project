@@ -4,6 +4,9 @@
     <!--CycleTime in micro seconds.-->
     <CycleTime>120000</CycleTime>
     <Priority>31</Priority>
+    <PouCall>
+      <Name>POU_TrendLine</Name>
+    </PouCall>
     <TaskFBGuid>{56852921-0240-4187-96a6-32d902dd2c54}</TaskFBGuid>
     <Fb_init>{a63f2721-0f5a-4dbf-b40a-96ef9d5a0fde}</Fb_init>
     <Fb_exit>{f20b9229-904a-4003-878b-a5ae7ce5caab}</Fb_exit>

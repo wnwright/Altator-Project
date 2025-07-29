@@ -75,6 +75,7 @@
 	</ImageDatas>
 	<Project ProjectGUID="{30242B1F-C11F-48AC-909A-AC863B2DCFE4}" Target64Bit="true" ShowHideConfigurations="#x6">
 		<System>
+			<Settings DontCheckTarget="169.254.152.58.1.1"/>
 			<Licenses>
 				<Target>
 					<ManualSelect>{FDE02854-39A7-440C-9EAE-C234A16A3CED}</ManualSelect>
@@ -94,7 +95,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{E0C1BE9A-6BAD-4BCF-B0B4-D6F967333F48}" Name="Altator_Program" PrjFilePath="Altator_Program\Altator_Program.plcproj" TmcFilePath="Altator_Program\Altator_Program.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{093BC09E-448B-D3DE-0427-489B61FC9967}" TmcPath="Altator_Program\Altator_Program.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{7C094F02-B25A-0CDF-A64B-9B89AB9F1F94}" TmcPath="Altator_Program\Altator_Program.tmc">
 					<Name>Altator_Program Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
@@ -115,9 +116,29 @@
 							<Priority>20</Priority>
 							<CycleTime>10000000</CycleTime>
 						</Context>
+						<Context>
+							<Id>1</Id>
+							<Name>VISU_TASK</Name>
+							<ManualConfig>
+								<OTCID>#x02010040</OTCID>
+							</ManualConfig>
+							<Priority>30</Priority>
+							<CycleTime>200000000</CycleTime>
+						</Context>
+						<Context>
+							<Id>2</Id>
+							<Name>TrendRefreshTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010050</OTCID>
+							</ManualConfig>
+							<Priority>31</Priority>
+							<CycleTime>120000000</CycleTime>
+						</Context>
 					</Contexts>
 					<TaskPouOids>
 						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+						<TaskPouOid Prio="30" OTCID="#x08502002"/>
+						<TaskPouOid Prio="31" OTCID="#x08502003"/>
 					</TaskPouOids>
 				</Instance>
 			</Project>
