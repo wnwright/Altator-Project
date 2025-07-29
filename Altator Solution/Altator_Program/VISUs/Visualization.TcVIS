@@ -5,7 +5,7 @@
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"27"</v>
+          <v n="UniqueIdGenerator">"30"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -350,7 +350,7 @@
                     </o>
                     <o>
                       <v n="Id">1518820177L</v>
-                      <v n="Value">"POU_TrendLine.ArrayTrendDisp"</v>
+                      <v n="Value">"MAIN.fb_Gauge_01.rPressureTorr"</v>
                     </o>
                     <o>
                       <v n="Id">2990785078L</v>
@@ -358,7 +358,7 @@
                     </o>
                     <o>
                       <v n="Id">102497268L</v>
-                      <v n="Value">"POU_TrendLine.ArrayTrendDisp"</v>
+                      <v n="Value">"MAIN.fb_Gauge_01.rPressureTorr"</v>
                     </o>
                     <o>
                       <v n="Id">4129603265L</v>
@@ -366,15 +366,15 @@
                     </o>
                     <o>
                       <v n="Id">3474540816L</v>
-                      <v n="Value">1</v>
+                      <v n="Value">0</v>
                     </o>
                     <o>
                       <v n="Id">48782508L</v>
-                      <v n="Value">500</v>
+                      <v n="Value">0</v>
                     </o>
                     <o>
                       <v n="Id">788070771L</v>
-                      <v n="Value">"ARRAY [1..GVL_Data.aiTrendArrayMax] OF REAL"</v>
+                      <v n="Value">"REAL"</v>
                     </o>
                   </l>
                 </o>

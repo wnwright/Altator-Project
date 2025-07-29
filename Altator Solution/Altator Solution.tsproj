@@ -95,7 +95,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{E0C1BE9A-6BAD-4BCF-B0B4-D6F967333F48}" Name="Altator_Program" PrjFilePath="Altator_Program\Altator_Program.plcproj" TmcFilePath="Altator_Program\Altator_Program.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{7C094F02-B25A-0CDF-A64B-9B89AB9F1F94}" TmcPath="Altator_Program\Altator_Program.tmc">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{2CBB9C46-D6AC-0B5E-A49A-A8813F8E3E83}" TmcPath="Altator_Program\Altator_Program.tmc">
 					<Name>Altator_Program Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
@@ -818,7 +818,6 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030010"/>
 		<OwnerA Name="TIPC^Altator_Program^Altator_Program Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3022)">
 				<Link VarA="PlcTask Inputs^MAIN.fb_Gauge_01.nRawVoltage" VarB="AI Standard Channel 1^Value"/>
