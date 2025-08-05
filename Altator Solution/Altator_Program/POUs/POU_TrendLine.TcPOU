@@ -7,6 +7,9 @@ VAR
 	ArrayTrend : ARRAY[1..GVL_Data.aiTrendArrayMax]OF REAL;
 	ArrayTrendDisp : ARRAY[1..GVL_Data.aiTrendArrayMax]OF REAL;
 END_VAR
+VAR_INPUT
+	rTrendlinePressure : LREAL;
+END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[// Trend array loop
@@ -15,7 +18,8 @@ FOR aiLoopIndex := 1 TO (GVL_Data.aiTrendArrayMax-1) DO
 	
 END_FOR
 
-ArrayTrend[GVL_Data.aiTrendArrayMax] := GVL_Data.fAnalogData;
+//ArrayTrend[GVL_Data.aiTrendArrayMax] := GVL_Data.fAnalogData;
+ArrayTrend[GVL_Data.aiTrendArrayMax] := MAIN.fb_Gauge_01.rPressureTorr;
 
 // When Pause is OFF, Update the ArrayTrendDisp Array
 IF NOT GVL_Data.bTrendStatus THEN

@@ -3,7 +3,7 @@
   <POU Name="FB_Gauge" Id="{ef19411a-d9d4-4334-b626-6ca0cbaf7a8a}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_Gauge
 VAR_INPUT
-	nRawVoltage AT %I* : INT; // Raw data input to EL3022
+	nRawVoltage AT %I* : INT; // Raw data input to EL3102
 END_VAR
 VAR_OUTPUT
 	rPressureTorr : REAL; // Pressure value
@@ -15,7 +15,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[nScaledVoltage := (TO_LREAL(nRawVoltage) / 32767.0) * 10.0;
+      <ST><![CDATA[nScaledVoltage := -1*(TO_LREAL(nRawVoltage) / 32767.0) * 10.0;
 
 IF (nScaledVoltage>= 0.375) AND (nScaledVoltage<= 2.842) THEN
 rPressureTorr := -0.02585 

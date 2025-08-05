@@ -5,7 +5,7 @@
       <Data>
         <o xml:space="preserve" t="VisualObject">
           <n n="LastVisuLanguageModelEntry" />
-          <v n="UniqueIdGenerator">"30"</v>
+          <v n="UniqueIdGenerator">"45"</v>
           <o n="VisualElemList" t="VisualElemList">
             <l n="VisualElementList" t="VisualElemCollection" cet="GenericVisualElem">
               <o>
@@ -170,15 +170,15 @@
                     </o>
                     <o>
                       <v n="Id">3837067714L</v>
-                      <v n="Value" t="Single">1000</v>
+                      <v n="Value" t="Single">60</v>
                     </o>
                     <o>
                       <v n="Id">2867424708L</v>
-                      <v n="Value" t="Single">200</v>
+                      <v n="Value" t="Single">60</v>
                     </o>
                     <o>
                       <v n="Id">440407611L</v>
-                      <v n="Value" t="Single">50</v>
+                      <v n="Value" t="Single">1</v>
                     </o>
                     <o>
                       <v n="Id">1527935698L</v>
@@ -210,7 +210,7 @@
                     </o>
                     <o>
                       <v n="Id">993465544L</v>
-                      <v n="Value">46</v>
+                      <v n="Value">32</v>
                     </o>
                     <o>
                       <v n="Id">743178379L</v>
@@ -350,7 +350,7 @@
                     </o>
                     <o>
                       <v n="Id">1518820177L</v>
-                      <v n="Value">"MAIN.fb_Gauge_01.rPressureTorr"</v>
+                      <v n="Value">"POU_TrendLine.ArrayTrendDisp"</v>
                     </o>
                     <o>
                       <v n="Id">2990785078L</v>
@@ -358,7 +358,7 @@
                     </o>
                     <o>
                       <v n="Id">102497268L</v>
-                      <v n="Value">"MAIN.fb_Gauge_01.rPressureTorr"</v>
+                      <v n="Value">"POU_TrendLine.ArrayTrendDisp"</v>
                     </o>
                     <o>
                       <v n="Id">4129603265L</v>
@@ -366,15 +366,15 @@
                     </o>
                     <o>
                       <v n="Id">3474540816L</v>
-                      <v n="Value">0</v>
+                      <v n="Value">1</v>
                     </o>
                     <o>
                       <v n="Id">48782508L</v>
-                      <v n="Value">0</v>
+                      <v n="Value">500</v>
                     </o>
                     <o>
                       <v n="Id">788070771L</v>
-                      <v n="Value">"REAL"</v>
+                      <v n="Value">"ARRAY [1..GVL_Data.aiTrendArrayMax] OF REAL"</v>
                     </o>
                   </l>
                 </o>
@@ -736,7 +736,7 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"GVL_Data.fAnalogData"</v>
+                      <v n="Value">"MAIN.fb_Gauge_01.rPressureTorr"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
