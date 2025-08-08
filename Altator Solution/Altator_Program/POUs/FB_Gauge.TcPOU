@@ -15,7 +15,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[nScaledVoltage := -1*(TO_LREAL(nRawVoltage) / 32767.0) * 10.0;
+      <ST><![CDATA[nScaledVoltage := (TO_LREAL(nRawVoltage) / 32767.0) * 10.0;
 
 IF (nScaledVoltage>= 0.375) AND (nScaledVoltage<= 2.842) THEN
 rPressureTorr := -0.02585 
